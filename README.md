@@ -1,3 +1,3 @@
-# yuyinPage
+# Diego Sanches Sandoval
 
-## Esta esn una pagina de perfil profeconal
+## Esta es una pagina de perfil profeconal

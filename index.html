@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/styles.css">
+<script src="./scrip.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/index.css">
@@ -73,35 +74,19 @@
 
   <!-- Overlay effect when opening sidebar on small screens -->
   <div class="css-overlay css-hide-large css-animate-opacity" onclick="js_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
   <!-- !PAGE CONTENT! -->
   <div class="css-main" style="margin-left:300px">
-
-    <!-- Header -->
     <header id="portfolio">
       <a href="#"><img src="img/perfil.jpg" style="width:65px;" class="css-circle css-right css-margin css-hide-large css-hover-opacity"></a>
       <span class="css-button css-hide-large css-xxlarge css-hover-text-grey" onclick="js_open()"><i class="fa fa-bars"></i></span>
       <div class="css-container">
         <h1><b>Mi Portafolio</b></h1>
-
       </div>
     </header>
 
-    <!-- First Photo Grid-->
-    <!-- Page Content -->
     <div class="container page-top">
-
-      <!-- <h2>Fotos de mi instagram</h2>
-      <br>
-      <div class="row popular" id="popular">
- -->
-
-      <!-- </div> -->
       <h2><b>Fotos</b></h2>
       <div class="row">
-
-
-
         <div class="col-lg-4 col-md-6 mb-4 col-xs-6 thumb">
           <a href="./img/1.JPG" class="fancybox" rel="ligthbox">
             <img src="./img/1.JPG" class="zoom img-fluid " alt="">
@@ -289,55 +274,28 @@
             <img src="./img/36.JPG" class="zoom img-fluid " alt="">
           </a>
         </div>
-
-
-
       </div>
-
-
-
-
     </div>
 
-    <!-- videos-->
-
-    <!-- Grid row -->
-    <!-- Grid row -->
-
     <div class="container page-top">
-
       <h2><b>Video</b></h2>
-
       <div class="row">
         <div class="embed-responsive embed-responsive-21by9">
           <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WylclXPl3hg"></iframe>
         </div>
       </div>
     </div>
-
-
-
-
     <div class="row">
       <div class="css-container css-padding-large page-top" style="margin-bottom:32px">
-
         <div class="container">
           <h2 id="aboutMe"><b>Acerca de mí</b></h2>
           <p>Sólo soy un tipo de México con muchas ideas trabajando para convertirlas en realidad. Porque creo que eso es lo que hace que el cine sea tan encantador e hipnotizante, el hecho de que podamos transformar conceptos de realidad en realidad. Creo
             que todos tenemos algo que contar, pero cómo lo hacemos es decisión propia. Yo elijo el cine.</p>
           <hr>
         </div>
-
       </div>
-
-
-
     </div>
-
-
-    <div class="css-black css-center css-padding-24">Diego San 2019</div>
-
-    <!-- End page content -->
+    <div class="css-black css-center css-padding-24">Diego San 2019 <i class='far fa-copyright'></i></div>
   </div>
 
   <script>
@@ -398,39 +356,6 @@
       $('#modal4 iframe').attr("src", $("#modal4 iframe").attr("src"));
     });
   </script>
-
-
-  <!-- 
-  <script>
-    $.ajax({
-      type: "GET",
-      dataType: "jsonp",
-      cache: false,
-      url: "https://api.instagram.com/v1/users/self/media/recent?access_token=8395526610.1677ed0.289a39a6055f416bac3ffb9105a70273",
-      success: function(data) {
-        // placing the images on the page
-        $(".popular").append(data);
-
-        var cont = data['data'].length
-
-        console.log(data['data'][0]['images']['standard_resolution']['url'])
-        var d1 = document.getElementById('popular');
-        for (var i = 0; i < cont; i++) {
-          $(".popular").append(`
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-              <a href="${data['data'][i]['images']['standard_resolution']['url']}" class="fancybox" rel="ligthbox" target="_blank">
-                <img src="${data['data'][i]['images']['standard_resolution']['url']}" class="zoom img-fluid" alt="">
-              </a>
-            </div>`);
-        }
-
-        effecto()
-
-      }
-    });
-  </script> -->
-
-
 </body>
 
 </html>
