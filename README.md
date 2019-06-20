@@ -1,3 +1,3 @@
 # Diego Sanches Sandoval
 
-## Esta es una pagina de perfil profeconal
+## Esta es una pagina de perfil profecional
